@@ -2,6 +2,7 @@ package inheritance;
 
 public class Student_Collage extends Student{
     private int term;
+    private boolean attendance;
 
     public Student_Collage(String name, int id, String schoolName, int term) {
         super(name, id, schoolName);

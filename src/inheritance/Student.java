@@ -10,7 +10,9 @@ public class Student extends Human {
         this.schoolName=schoolName;
         this.id = id;
     }
+    public void assignHomeWork(){
 
+    }
 
 
     public int getId() {

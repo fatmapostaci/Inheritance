@@ -6,10 +6,16 @@ public class Human  {
     protected String name;
     protected int age;
     protected String gender;
+    private double salary;
 
     public Human(String name) {
         //student classı inherited to this constructor
         this.name = name;
+    }
+
+    public Human(String name,double salary) {
+        this.name = name;
+        this.salary = salary;
     }
 
     public Human() {
@@ -33,7 +39,8 @@ public class Human  {
     }
 
     public int getAge() {
-        return age;
+        return age > 0 ? age : -1; // Negatif veya sıfır yaş kontrolü
+
     }
 
     public void setAge(int age) {

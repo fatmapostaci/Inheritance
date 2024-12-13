@@ -1,6 +1,6 @@
 package inheritance;
 
-import dersler.gun35.inheritance.Teacher.PrimarySchoolTeacher;
+import inheritance.Teacher.PrimarySchoolTeacher;
 
 public class Inheritance {
     public static void main(String[] args) {
@@ -25,7 +25,7 @@ public class Inheritance {
         System.out.println(ahmet.introduceYourself());
         System.out.println("ahmet.isABilsemStudent() = " + ahmet.isABilsemStudent());
 
-        PrimarySchoolTeacher elifOgretmen = new PrimarySchoolTeacher("Elif","Sınıf Öğretmeni",true);
+        PrimarySchoolTeacher elifOgretmen = new PrimarySchoolTeacher("Elif","Sınıf Öğretmeni",35000,true);
         elifOgretmen.gatherBilsemCommision(ahmet);
         System.out.println("ahmet.isABilsemStudent() = " + ahmet.isABilsemStudent());
     }

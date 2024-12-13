@@ -1,10 +1,11 @@
 package inheritance;
 
 public class Teacher extends Human {
-    private String branch;
+    private final String branch;
+    private int yearsOfExperience;
 
-    public Teacher(String name, String branch) {
-        super(name);
+    public Teacher(String name, String branch, double salary) {
+        super(name,salary);
         this.branch = branch;
     }
 
@@ -25,11 +26,11 @@ public class Teacher extends Human {
 //?????**bu methodu neden static yapması gerekti??????????
     public static class PrimarySchoolTeacher extends Teacher {
 
-        private boolean bilsemCounselorTeacher;
+        private final boolean bilsemCounselorTeacher;
 
 
-        public PrimarySchoolTeacher(String name, String branch, boolean bilsemCounselorTeacher) {
-            super(name, branch);
+        public PrimarySchoolTeacher(String name, String branch, double salary, boolean bilsemCounselorTeacher) {
+            super(name, branch,salary);
             this.bilsemCounselorTeacher = bilsemCounselorTeacher;
 
         }
