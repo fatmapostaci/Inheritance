@@ -1,5 +1,11 @@
 package inheritance;
 
+/**
+ * Student.java: Human sınıfını inherit eder
+ *@int id Öğrenci ID’si
+ *@String schoolName okul adı.
+ * Ödev yapması için attribute içeriyor
+ */
 public class Student extends Human {
 
     private int id;
@@ -10,7 +16,7 @@ public class Student extends Human {
         this.schoolName=schoolName;
         this.id = id;
     }
-    public void assignHomeWork(){
+    public void doHomework(){
 
     }
 

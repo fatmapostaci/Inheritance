@@ -7,8 +7,8 @@ public class Doctor extends Human {
     public Doctor() {
     }
 
-    public Doctor(String name, boolean tus, String specialization) {
-        super(name);
+    public Doctor(String name, double salary, boolean tus, String specialization) {
+        super(name,salary);
         this.tus =tus;
 
         if (tus==true)

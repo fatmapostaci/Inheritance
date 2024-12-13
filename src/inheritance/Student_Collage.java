@@ -1,5 +1,11 @@
 package inheritance;
 
+/**
+ * Student_Collage.java
+ * Student_HighSchool.java: Student sınıfını genişletiyor ve kolej/ortaokul öğrencileri için özel nitelikler ve yöntemler ekliyorlar. Ayrıca kendine özgü introduceYourself metotlarına sahipler​
+ * ​
+ * .
+ */
 public class Student_Collage extends Student{
     private int term;
     private boolean attendance;

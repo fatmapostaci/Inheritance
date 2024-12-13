@@ -18,8 +18,10 @@ public class Teacher extends Human {
                 "branch='" + branch + '\'' +
                 '}';
     }
+    public void doHomework(){
 
-    private void gatherSchoolCommision() {
+    }
+    public void gatherSchoolCommision() {
 
     }
 

@@ -1,7 +1,11 @@
 package inheritance;
 
 
-
+/**
+ * Human.java: Temel sınıf, ad, yaş ve cinsiyet özellikleri içeriyor.
+ * Ayrıca genel bir @overrided introduceYourself metodu var.
+ * Bu sınıf diğer sınıflar tarafından extend ediliyor
+ */
 public class Human  {
     protected String name;
     protected int age;
