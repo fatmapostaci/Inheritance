@@ -18,14 +18,25 @@ public class Human  {
     }
 
     public Human(String name,double salary) {
-        this.name = name;
-        this.salary = salary;
+
+        try {
+            this.name = name;
+        } catch (Exception e) {
+            this.name = null;
+        }
+
+        try {
+            this.salary = salary;
+        } catch (Exception e) {
+            this.salary= 0.0;
+        }
     }
 
     public Human() {
     }
     /**
-     * Her subsclass kendi metniyle kendini tanıtır
+     * Introduce yourself with basic details. Can be extended by subclasses.
+     * @return A string representing the introduction of the human.
      */
     public String introduceYourself(){
         return "My name is " + name + ", I am " + age + " years old.";
@@ -45,6 +56,19 @@ public class Human  {
     public int getAge() {
         return age > 0 ? age : -1; // Negatif veya sıfır yaş kontrolü
 
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public String setSalary(double salary) {
+
+        this.salary = salary;
+        if(salary<50000)
+             return "Zor geçiniyorum";
+        else
+           return "I love my job.";
     }
 
     public void setAge(int age) {

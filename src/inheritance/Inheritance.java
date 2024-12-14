@@ -30,10 +30,16 @@ public class Inheritance {
         //Primary School student
         Student_PrimarySchool ahmet = new Student_PrimarySchool("Ahmet",132,"Yenidoğu Okulları",3,true);
         System.out.println(ahmet.introduceYourself());
-        System.out.println("Is Ahmet in BILSEM?= " + ahmet.isABilsemStudent());
+
+
+        //Primary school teacher
+        PrimarySchoolTeacher elifOgretmen = new PrimarySchoolTeacher("Elif","Sınıf Öğretmeni",35000,true);
+        System.out.println(elifOgretmen.introduceYourself());
+
+        System.out.println();
 
         // BILSEM approval test
-        PrimarySchoolTeacher elifOgretmen = new PrimarySchoolTeacher("Elif","Sınıf Öğretmeni",35000,true);
+        System.out.println("Is Ahmet in BILSEM?= " + ahmet.isABilsemStudent());
         elifOgretmen.gatherBilsemCommision(ahmet);
         System.out.println("Is ahmet in BILSEM? = " + ahmet.isABilsemStudent());
     }

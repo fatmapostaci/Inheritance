@@ -10,7 +10,12 @@ public class Student extends Human {
 
     private int id;
     private String schoolName;
-
+    /**
+     * Constructor to create a Student.
+     * @param name The name of the student.
+     * @param id The school ID of the student.
+     * @param schoolName The name of the school the student attends.
+     */
     public Student(String name, int id, String schoolName ) {
         super(name);
         this.schoolName=schoolName;
