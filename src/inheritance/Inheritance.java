@@ -40,6 +40,7 @@ public class Inheritance {
 
         // BILSEM approval test
         System.out.println("Is Ahmet in BILSEM?= " + ahmet.isABilsemStudent());
+        //teacher asks to comission for Ahmet
         elifOgretmen.gatherBilsemCommision(ahmet);
         System.out.println("Is ahmet in BILSEM? = " + ahmet.isABilsemStudent());
     }
